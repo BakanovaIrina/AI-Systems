@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2/"
+     xml:base="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:Lab2="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2/1."/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#color -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#color">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#favorite_color -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#favorite_color">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#style -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#style">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#wearing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#wearing">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Color -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Color"/>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Doll -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Doll"/>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Outfit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Outfit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Style -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Style"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Barbie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Barbie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Doll"/>
+        <Lab2:favorite_color rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Pink"/>
+        <Lab2:wearing rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Big_Dress"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Big_Dress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Big_Dress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Outfit"/>
+        <Lab2:color rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Blue"/>
+        <Lab2:style rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Offitial_style"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Black -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Black">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Blue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Blue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Doctors_coat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Doctors_coat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Outfit"/>
+        <Lab2:color rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#White"/>
+        <Lab2:style rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Work_style"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Elegant_dress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Elegant_dress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Outfit"/>
+        <Lab2:color rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Pink"/>
+        <Lab2:style rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Work_style"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Green -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Green">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Kim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Kim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Doll"/>
+        <Lab2:favorite_color rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Black"/>
+        <Lab2:wearing rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Big_Dress"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Office_set -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Office_set">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Outfit"/>
+        <Lab2:color rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Black"/>
+        <Lab2:style rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Work_style"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Offitial_style -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Offitial_style">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Style"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Olimpiada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Olimpiada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Event"/>
+        <Lab2:style rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Sport_style"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Pink -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Pink">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Sparkly_dress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Sparkly_dress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Outfit"/>
+        <Lab2:color rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Blue"/>
+        <Lab2:style rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Offitial_style"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Sport_style -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Sport_style">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Style"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Stacy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Stacy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Doll"/>
+        <Lab2:favorite_color rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Blue"/>
+        <Lab2:wearing rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Elegant_dress"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Stewardess_costume -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Stewardess_costume">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Outfit"/>
+        <Lab2:color rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Green"/>
+        <Lab2:style rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Work_style"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Swimsuit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Swimsuit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Outfit"/>
+        <Lab2:color rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Pink"/>
+        <Lab2:style rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Sport_style"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Tennis_suit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Tennis_suit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Outfit"/>
+        <Lab2:color rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#White"/>
+        <Lab2:style rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Sport_style"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Teresa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Teresa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Doll"/>
+        <Lab2:favorite_color rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#White"/>
+        <Lab2:wearing rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Sparkly_dress"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Wedding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Wedding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Event"/>
+        <Lab2:style rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Offitial_style"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Wedding_dress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Wedding_dress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Outfit"/>
+        <Lab2:color rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#White"/>
+        <Lab2:style rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Offitial_style"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#White -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#White">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Work_style -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Work_style">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Style"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Works_Festival -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Works_Festival">
+        <rdf:type rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Event"/>
+        <Lab2:style rdf:resource="http://www.semanticweb.org/irina/ontologies/2023/10/Lab2#Work_style"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
